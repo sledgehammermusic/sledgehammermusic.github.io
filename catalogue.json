@@ -1,7 +1,7 @@
 {
   "source_playlist": "https://www.youtube.com/playlist?list=PLXkfQGqIyC3o",
   "source": "User-provided yt-dlp playlist export",
-  "notes": "Collections are initial inferred groupings; songs may be recategorized. Unavailable names are marked for review.",
+  "notes": "Four unavailable titles are kept in catalogue data but hidden on the website pending verification; collection assignments are preliminary.",
   "tracks": [
     {
       "order": 1,
@@ -521,7 +521,8 @@
       "title": "Title unavailable",
       "details": "Title missing from playlist export",
       "collection": "unidentified",
-      "review": true
+      "review": true,
+      "hidden": true
     },
     {
       "order": 66,
@@ -529,7 +530,8 @@
       "title": "Title unavailable",
       "details": "Title missing from playlist export",
       "collection": "unidentified",
-      "review": true
+      "review": true,
+      "hidden": true
     },
     {
       "order": 67,
@@ -649,7 +651,8 @@
       "title": "Title unavailable",
       "details": "Title missing from playlist export",
       "collection": "unidentified",
-      "review": true
+      "review": true,
+      "hidden": true
     },
     {
       "order": 82,
@@ -665,7 +668,8 @@
       "title": "Title unavailable",
       "details": "Title missing from playlist export",
       "collection": "unidentified",
-      "review": true
+      "review": true,
+      "hidden": true
     },
     {
       "order": 84,
