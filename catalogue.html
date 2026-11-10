@@ -18,7 +18,7 @@ const genres={"deep-house":"Deep House","blues":"Blues","progressive-rock":"Prog
 const moods={"humorous":"Humorous","dreamlike":"Dreamlike","reflective":"Reflective / Melancholic","heartfelt":"Heartfelt","atmospheric":"Atmospheric","uplifting":"Uplifting","dramatic":"Dramatic"};
 const cards=document.getElementById("cards"),q=document.getElementById("search"),cat=document.getElementById("collection"),genre=document.getElementById("genre"),mood=document.getElementById("mood"),sort=document.getElementById("order"),status=document.getElementById("status");
 const dialog=document.getElementById("playerDialog"),frame=document.getElementById("player"),playerTitle=document.getElementById("playerTitle"),youtubeLink=document.getElementById("youtubeLink");
-let tracks=[];let lyricEntries=new Map();
+let tracks=[];let lyricEntries=new Map();let lyricsReady=false;
 function play(t,start=0){playerTitle.textContent=t.title;frame.src="https://www.youtube-nocookie.com/embed/"+t.id+"?autoplay=1"+(start?"&start="+Math.floor(start):"");youtubeLink.href="https://www.youtube.com/watch?v="+t.id+(start?"&t="+Math.floor(start)+"s":"");dialog.showModal()}
 function close(){frame.src="about:blank";dialog.close()}
 document.getElementById("close").addEventListener("click",close);dialog.addEventListener("close",()=>frame.src="about:blank");dialog.addEventListener("click",e=>{if(e.target===dialog)close()});
@@ -29,7 +29,7 @@ const cats=t.collections||[t.collection].filter(Boolean),gs=t.genres||[],ms=t.mo
 return (!cat.value||cats.includes(cat.value))&&(!genre.value||gs.includes(genre.value))&&(!mood.value||ms.includes(mood.value))&&[t.title,t.details,...cats.map(k=>groups[k]||k),...gs.map(k=>genres[k]||k),...ms.map(k=>moods[k]||k),...(lyric?.lines||[]).map(l=>l.text)].join(" ").toLowerCase().includes(term);
 });
 if(sort.value==="az")selected.sort((a,b)=>a.title.localeCompare(b.title));else if(sort.value==="za")selected.sort((a,b)=>b.title.localeCompare(a.title));else selected.sort((a,b)=>(a.releaseOrder??a.order)-(b.releaseOrder??b.order));
-cards.replaceChildren();status.textContent=selected.length+" of "+tracks.length+" video links";
+cards.replaceChildren();status.textContent=selected.length+" of "+tracks.length+" video links · "+(lyricsReady?lyricEntries.size+" songs with searchable lyrics":"Lyrics not loaded");
 if(!selected.length){const p=document.createElement("p");p.textContent="No songs match that search.";cards.append(p);return}
 for(const t of selected){
 const card=document.createElement("article");card.className="card";
@@ -42,5 +42,5 @@ const links=document.createElement("div");links.className="links";const button=d
 const searchParams=new URLSearchParams(window.location.search);const requestedCollection=searchParams.get("collection");const requestedQuery=searchParams.get("q");
 function fill(select,labels,field){for(const [key,label] of Object.entries(labels))if(tracks.some(t=>(t[field]||[]).includes(key))){const opt=document.createElement("option");opt.value=key;opt.textContent=label;select.append(opt)}}
 for(const el of [q,cat,genre,mood,sort])el.addEventListener(el===q?"input":"change",render);
-Promise.all([fetch("catalogue.json").then(r=>{if(!r.ok)throw Error("Catalogue not available");return r.json()}),fetch("lyrics-index.json").then(r=>r.ok?r.json():null).catch(()=>null)]).then(([data,lyrics])=>{if(lyrics?.songs)lyricEntries=new Map(lyrics.songs.map(x=>[x.id,x]));tracks=data.tracks.filter(t=>!t.hidden);fill(cat,groups,"collections");fill(genre,genres,"genres");fill(mood,moods,"moods");if(requestedCollection&&tracks.some(t=>(t.collections||[]).includes(requestedCollection)))cat.value=requestedCollection;if(requestedQuery)q.value=requestedQuery;render()}).catch(()=>{status.textContent="The catalogue couldn't load. Refresh the page to try again."});
+Promise.all([fetch("catalogue.json").then(r=>{if(!r.ok)throw Error("Catalogue not available");return r.json()}),fetch("lyrics-index.json?v=20261110-2",{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("HTTP "+r.status);return r.json()}).catch(e=>{console.warn("Could not load lyric index",e);return null})]).then(([data,lyrics])=>{if(lyrics?.songs){lyricEntries=new Map(lyrics.songs.map(x=>[x.id,x]));lyricsReady=true;}tracks=data.tracks.filter(t=>!t.hidden);fill(cat,groups,"collections");fill(genre,genres,"genres");fill(mood,moods,"moods");if(requestedCollection&&tracks.some(t=>(t.collections||[]).includes(requestedCollection)))cat.value=requestedCollection;if(requestedQuery)q.value=requestedQuery;render()}).catch(()=>{status.textContent="The catalogue couldn't load. Refresh the page to try again."});
 </script><script src="/lang.js" defer></script></body></html>
