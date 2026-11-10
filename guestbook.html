@@ -34,7 +34,7 @@ footer{border-top:1px solid var(--line);padding:23px 24px;color:var(--muted);tex
 <div class="entries-header"><h2>Notes from visitors</h2><span id="guestbook-status" role="status" aria-live="polite">Loading visitors' messages…</span></div>
 <div class="entries" id="entries"><p class="empty">Fetching entries from the visitors' book…</p></div>
 <p class="note">Only messages approved by Sledge appear here. Please be kind; no spam, advertising, harassment or personal contact details.</p>
-</main><footer>© Sledge Hammer Music · Warning: May contain traces of optimism.</footer>
+</main><footer>© Sledge Hammer Music · Warning: May contain traces of optimism.<div class="shm-footer-stats" style="display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:10px 24px;margin:18px auto 4px;padding:12px 16px;border-top:1px solid #344357;font-size:.85rem;color:#c4d0dc;text-align:center"><span>👥 Visitors: <strong id="shm-real-visitors">Coming soon</strong></span><span>🕵️ Suspicious characters: under investigation</span><span>🦙 Llama sightings: unconfirmed</span><span>🍪 Doughnuts received: one biscuit (disputed)</span></div></footer>
 <script>
 (function(){
 const root=document.getElementById("entries"),status=document.getElementById("guestbook-status");
@@ -52,4 +52,4 @@ top.append(author,date);article.append(top,body);root.append(article);
 }
 }).catch(()=>{root.replaceChildren();const p=document.createElement("p");p.className="empty";p.textContent="Approved messages are temporarily unavailable.";root.append(p);status.textContent="Messages unavailable"});
 })();
-</script><script src="/lang.js" defer></script></body></html>
+</script><script src="/lang.js" defer></script><script src="/analytics.js" defer></script></body></html>
