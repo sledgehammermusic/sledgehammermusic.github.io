@@ -5,7 +5,7 @@
 */
 (()=>{
 "use strict";
-const PUBLIC_SITE_CODE=""; // e.g. "sledgehammermusic" from https://sledgehammermusic.goatcounter.com
+const PUBLIC_SITE_CODE="sledgehammermusic"; // e.g. "sledgehammermusic" from https://sledgehammermusic.goatcounter.com
 const count=document.getElementById("shm-real-visitors");
 if(!PUBLIC_SITE_CODE){if(count)count.textContent="Coming soon";return;}
 if(!/^[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?$/.test(PUBLIC_SITE_CODE)){if(count)count.textContent="Not available";return;}
