@@ -1,7 +1,7 @@
 {
   "source_playlist": "https://www.youtube.com/playlist?list=PLXkfQGqIyC3o",
   "source": "User-provided yt-dlp playlist export",
-  "notes": "Four unavailable titles are kept in catalogue data but hidden on the website pending verification; collection assignments are preliminary.",
+  "notes": "79 videos matched the public-only playlist export. Positions 65,66,81,83 are deleted by uploader; position 56 was excluded by availability=public. These five are preserved as hidden records for possible future review.",
   "tracks": [
     {
       "order": 1,
@@ -449,7 +449,9 @@
       "title": "I Only Came to Fish",
       "details": "A Red Dead Online–Inspired Comedy Song, Music Video",
       "collection": "humour",
-      "review": false
+      "review": true,
+      "hidden": true,
+      "visibility_note": "Excluded by public-only yt-dlp filter, exact visibility not established"
     },
     {
       "order": 57,
