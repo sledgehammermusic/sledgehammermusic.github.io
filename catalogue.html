@@ -39,8 +39,8 @@ const tags=document.createElement("p");tags.textContent=[...(t.genres||[]).map(k
 const links=document.createElement("div");links.className="links";const button=document.createElement("button");button.textContent="Play here";button.type="button";button.addEventListener("click",()=>play(t));const yt=document.createElement("a");yt.href="https://www.youtube.com/watch?v="+t.id;yt.target="_blank";yt.rel="noopener";yt.textContent="YouTube ↗";links.append(button,yt);body.append(links);card.append(imageButton,body);cards.append(card)
 }
 }
-const requestedCollection=new URLSearchParams(window.location.search).get("collection");
+const searchParams=new URLSearchParams(window.location.search);const requestedCollection=searchParams.get("collection");const requestedQuery=searchParams.get("q");
 function fill(select,labels,field){for(const [key,label] of Object.entries(labels))if(tracks.some(t=>(t[field]||[]).includes(key))){const opt=document.createElement("option");opt.value=key;opt.textContent=label;select.append(opt)}}
 for(const el of [q,cat,genre,mood,sort])el.addEventListener(el===q?"input":"change",render);
-fetch("catalogue.json").then(r=>{if(!r.ok)throw Error("Catalogue not available");return r.json()}).then(data=>{tracks=data.tracks.filter(t=>!t.hidden);fill(cat,groups,"collections");fill(genre,genres,"genres");fill(mood,moods,"moods");if(requestedCollection&&tracks.some(t=>(t.collections||[]).includes(requestedCollection)))cat.value=requestedCollection;render()}).catch(()=>{status.textContent="The catalogue couldn't load. Refresh the page to try again."});
+fetch("catalogue.json").then(r=>{if(!r.ok)throw Error("Catalogue not available");return r.json()}).then(data=>{tracks=data.tracks.filter(t=>!t.hidden);fill(cat,groups,"collections");fill(genre,genres,"genres");fill(mood,moods,"moods");if(requestedCollection&&tracks.some(t=>(t.collections||[]).includes(requestedCollection)))cat.value=requestedCollection;if(requestedQuery)q.value=requestedQuery;render()}).catch(()=>{status.textContent="The catalogue couldn't load. Refresh the page to try again."});
 </script><script src="/lang.js" defer></script></body></html>
