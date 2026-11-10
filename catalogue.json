@@ -1,7 +1,7 @@
 {
   "source_playlist": "https://www.youtube.com/playlist?list=PLXkfQGqIyC3o",
   "source": "User-provided yt-dlp playlist export",
-  "notes": "79 videos matched the public-only playlist export. Positions 65,66,81,83 are deleted by uploader; position 56 was excluded by availability=public. These five are preserved as hidden records for possible future review.",
+  "notes": "79 videos matched the public-only playlist export. Positions 65,66,81,83 are deleted by uploader; position 56 was excluded by availability=public. These five are preserved as hidden records for possible future review. Three confirmed German-language songs are grouped as Tscherman Songs; further songs can be assigned as identified.",
   "tracks": [
     {
       "order": 1,
@@ -48,7 +48,7 @@
       "id": "DRYYXrXJwuw",
       "title": "Schau hoch! Pass auf!",
       "details": "Deutscher Comedy-Song über Smartphones Official Music Video",
-      "collection": "humour",
+      "collection": "tscherman",
       "review": false
     },
     {
@@ -64,7 +64,7 @@
       "id": "5dWvaTx8lyw",
       "title": "IKEA macht misch psychisch",
       "details": "Deutscher Comedy-Song über den Umzug, Music Video",
-      "collection": "humour",
+      "collection": "tscherman",
       "review": false
     },
     {
@@ -564,7 +564,7 @@
       "id": "7rvgvXVpyz8",
       "title": "Halt die Klappe und gib mir den Eierpunsch!",
       "details": "Weihnachtssatire, Music Video",
-      "collection": "humour",
+      "collection": "tscherman",
       "review": false
     },
     {
