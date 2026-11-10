@@ -5,7 +5,13 @@ const css=document.createElement("style");css.textContent='.shm-language{display
 let buttons=[];
 function applyText(root){
 const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);const nodes=[];while(walker.nextNode())nodes.push(walker.currentNode);
-for(const n of nodes){if(["SCRIPT","STYLE","TEXTAREA","OPTION"].includes(n.parentElement?.tagName))continue;const raw=n.nodeValue;const stripped=raw.trim();if(!stripped)continue;const converted=(lang==="de"?translated[stripped]:reverse[stripped]);if(converted!==undefined&&stripped!==converted){n.nodeValue=raw.replace(stripped,converted)}}
+for(const n of nodes){if(["SCRIPT","STYLE","TEXTAREA","OPTION"].includes(n.parentElement?.tagName))continue;const raw=n.nodeValue;const stripped=raw.trim().replace(/\s+/g," ");if(!stripped)continue;const converted=(lang==="de"?translated[stripped]:reverse[stripped]);if(converted!==undefined&&stripped!==converted){n.nodeValue=raw.replace(raw.trim(),converted)}
+const enLine="Some would call it noise. I prefer to think of it as making music. And the neighbours get to listen to good music too. Whether they want to or not.";
+const deLine="Manche nennen es Lärm. Ich nenne es Musikmachen. Und die Nachbarn kommen auch in den Genuss guter Musik. Ob sie wollen oder nicht.";
+const enFormatted="Some would call it noise. I prefer to think of it as making music.\nAnd the neighbours get to listen to good music too.\nWhether they want to or not.";
+const deFormatted="Manche nennen es Lärm. Ich nenne es Musikmachen.\nUnd die Nachbarn kommen auch in den Genuss guter Musik.\nOb sie wollen oder nicht.";
+const current=n.nodeValue.trim().replace(/\s+/g," ");
+if(current===enLine||current===deLine){n.nodeValue=lang==="de"?deFormatted:enFormatted;n.parentElement.style.whiteSpace="pre-line"}}
 for(const el of root.querySelectorAll('input[placeholder]')){let p=el.placeholder;if(lang==="de"&&p==="Search songs, moods or themes…")el.placeholder="Songs, Stimmungen oder Themen suchen …";else if(lang==="en"&&p==="Songs, Stimmungen oder Themen suchen …")el.placeholder="Search songs, moods or themes…"}
 const q=root.querySelector("#status");if(q&&/\d+ of \d+ video links|\d+ von \d+ Videolinks/.test(q.textContent)){const nums=q.textContent.match(/\d+/g);q.textContent=lang==="de"?nums[0]+" von "+nums[1]+" Videolinks":nums[0]+" of "+nums[1]+" video links"}
 }
