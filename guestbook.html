@@ -27,33 +27,30 @@ footer{border-top:1px solid var(--line);padding:23px 24px;color:var(--muted);tex
 <body><header><div class="wrap"><a class="brand" href="/"><img src="/favicon.svg" alt="">SLEDGE HAMMER MUSIC</a><nav><a href="/">← Home</a><a href="catalogue.html">Music catalogue</a><a href="guestbook.html" aria-current="page">Visitors' Book</a></nav></div></header>
 <main class="wrap"><div class="intro"><div class="eyebrow">PULL UP A CHAIR</div><h1>The <em>Visitors' Book</em></h1>
 <p class="lead">Welcome to Sledge Hammer Music. Whether a song made you laugh, got you thinking, or left you staring into your tea, you're welcome to leave a few words.</p>
-<div class="welcome"><h2>Say hello, share a thought, or request more cheerful music.</h2>
-<p>Comments about the music, favourite songs, and general hellos are all welcome — in English or German. No need to flatter the management. He's already got a guitar.</p>
-<a class="button" href="https://github.com/sledgehammermusic/sledgehammermusic.github.io/issues/1#new_comment_field" target="_blank" rel="noopener noreferrer">✍ Leave a message on GitHub ↗</a>
-<a class="button secondary" href="https://github.com/sledgehammermusic/sledgehammermusic.github.io/issues/1" target="_blank" rel="noopener noreferrer">View the conversation ↗</a>
-<p class="note"><strong>Posting requires a free GitHub account.</strong> Your message and public GitHub username appear publicly. No email address or personal details are needed in the message. You can read the entries here without signing in.</p></div>
-</div>
+<div class="welcome"><h2>Every message gets a personal review.</h2>
+<p>Send us a thought about the music, a favourite song, or a friendly hello. Your message will not appear on this website unless Sledge approves it.</p>
+<p>Der Künstler prüft alle Einträge vor der Veröffentlichung. Deine Nachricht erscheint erst nach seiner Freigabe.</p>
+<p class="note"><strong>Private submissions are being set up.</strong> The guestbook is currently read-only while we connect the free private submission form. No GitHub account will be required once that form is live.</p>
+<p class="note">Bis dahin können noch keine neuen Einträge eingesandt werden. Vielen Dank für eure Geduld!</p></div>
 <div class="entries-header"><h2>Notes from visitors</h2><span id="guestbook-status" role="status" aria-live="polite">Loading visitors' messages…</span></div>
 <div class="entries" id="entries"><p class="empty">Fetching entries from the visitors' book…</p></div>
-<p class="note">This visitors' book is moderated through GitHub. Please be kind; no spam, advertising, harassment or personal contact details.</p>
+<p class="note">Only messages approved by Sledge appear here. Please be kind; no spam, advertising, harassment or personal contact details.</p>
 </main><footer>© Sledge Hammer Music · Warning: May contain traces of optimism.</footer>
 <script>
 (function(){
 const root=document.getElementById("entries"),status=document.getElementById("guestbook-status");
-function error(){root.replaceChildren();const p=document.createElement("p");p.className="empty";p.textContent="Visitor messages are temporarily unavailable here. You can still read and leave messages directly on GitHub.";const a=document.createElement("a");a.href="https://github.com/sledgehammermusic/sledgehammermusic.github.io/issues/1";a.textContent="Open visitors' book on GitHub →";a.target="_blank";a.rel="noopener noreferrer";root.append(p,a);status.textContent="Messages temporarily unavailable"}
-fetch("https://api.github.com/repos/sledgehammermusic/sledgehammermusic.github.io/issues/1/comments?per_page=100",{headers:{"Accept":"application/vnd.github+json"}})
-.then(r=>{if(!r.ok)throw Error("HTTP "+r.status);return r.json()}).then(comments=>{
-root.replaceChildren();status.textContent=comments.length+" message"+(comments.length===1?"":"s")+(comments.length===100?" · showing first 100":"");
-if(!comments.length){const p=document.createElement("p");p.className="empty";p.textContent="Be the first to leave a note! The kettle's on.";root.append(p);return}
-for(const item of [...comments].reverse()){
+fetch("guestbook-approved.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("Approved messages unavailable");return r.json()}).then(data=>{
+const entries=Array.isArray(data.entries)?data.entries:[];
+root.replaceChildren();status.textContent=entries.length+" approved message"+(entries.length===1?"":"s");
+if(!entries.length){const p=document.createElement("p");p.className="empty";p.textContent="The visitors' book is ready. Approved entries will appear here once private submissions are enabled.";root.append(p);return;}
+for(const item of entries.slice().reverse()){
 const article=document.createElement("article");article.className="entry";
 const top=document.createElement("div");top.className="entry-top";
-const avatar=document.createElement("img");avatar.className="avatar";avatar.src=item.user?.avatar_url||"";avatar.alt="";avatar.loading="lazy";
-const author=document.createElement("a");author.className="author";author.href=item.user?.html_url||item.html_url;author.target="_blank";author.rel="noopener noreferrer";author.textContent=item.user?.login||"Visitor";
-const date=document.createElement("time");date.className="date";date.dateTime=item.created_at||"";date.textContent=item.created_at?new Date(item.created_at).toLocaleDateString(document.documentElement.lang==="de"?"de-DE":"en-GB",{year:"numeric",month:"short",day:"numeric"}):"";
-const body=document.createElement("p");body.className="message";body.textContent=item.body||"";
-top.append(avatar,author,date);article.append(top,body);root.append(article);
+const author=document.createElement("strong");author.className="author";author.textContent=String(item.name||"Visitor").slice(0,80);
+const date=document.createElement("time");date.className="date";date.textContent=String(item.date||"");
+const body=document.createElement("p");body.className="message";body.textContent=String(item.message||"").slice(0,3000);
+top.append(author,date);article.append(top,body);root.append(article);
 }
-}).catch(error);
+}).catch(()=>{root.replaceChildren();const p=document.createElement("p");p.className="empty";p.textContent="Approved messages are temporarily unavailable.";root.append(p);status.textContent="Messages unavailable"});
 })();
 </script><script src="/lang.js" defer></script></body></html>
