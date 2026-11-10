@@ -36,4 +36,4 @@ const links=document.createElement("div");links.className="links";const button=d
 const requestedCollection=new URLSearchParams(window.location.search).get("collection");
 q.addEventListener("input",render);cat.addEventListener("change",render);sort.addEventListener("change",render);
 fetch("catalogue.json").then(r=>{if(!r.ok)throw Error("Catalogue not available");return r.json()}).then(data=>{tracks=data.tracks.filter(t=>!t.hidden);for(const [key,label] of Object.entries(groups)){if(tracks.some(t=>t.collection===key)){const opt=document.createElement("option");opt.value=key;opt.textContent=label;cat.append(opt)}}if(requestedCollection&&tracks.some(t=>t.collection===requestedCollection))cat.value=requestedCollection;render()}).catch(()=>{status.textContent="The catalogue couldn't load. Refresh the page to try again."});
-</script></body></html>
+</script><script src="/lang.js" defer></script></body></html>
