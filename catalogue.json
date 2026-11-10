@@ -1,685 +1,1504 @@
 {
   "source_playlist": "https://www.youtube.com/playlist?list=PLXkfQGqIyC3o",
   "source": "User-provided yt-dlp playlist export",
-  "notes": "79 videos matched the public-only playlist export. Positions 65,66,81,83 are deleted by uploader; position 56 was excluded by availability=public. These five are preserved as hidden records for possible future review. Three confirmed German-language songs are grouped as Tscherman Songs; further songs can be assigned as identified.",
+  "notes": "79 videos matched the public-only playlist export. Positions 65,66,81,83 are deleted by uploader; position 56 was excluded by availability=public. These five are preserved as hidden records for possible future review. Three confirmed German-language songs are grouped as Tscherman Songs; further songs can be assigned as identified. Genre and mood labels are preliminary, derived from published titles/descriptions; unconfirmed audio genre is deliberately left blank. releaseOrder is playlist order (lower is presumed newer), not independently verified upload dates; when new videos are added give them a lower releaseOrder than existing entries.",
   "tracks": [
     {
       "order": 1,
       "id": "j9DpUBkYYOY",
       "title": "Hear Me Through the Rain",
       "details": "Emotional Alternative Rock | Sledge Hammer Music, Music Video",
-      "collection": "reflection",
-      "review": false
+      "review": false,
+      "collections": [
+        "reflection",
+        "stories"
+      ],
+      "genres": [
+        "alternative-rock"
+      ],
+      "moods": [
+        "reflective",
+        "heartfelt"
+      ],
+      "releaseOrder": 1,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 2,
       "id": "SZXJq3jJgX8",
       "title": "No Sound Comes Out",
       "details": "A Song About Depression Music Video 1080p",
-      "collection": "reflection",
-      "review": false
+      "review": false,
+      "collections": [
+        "reflection",
+        "stories"
+      ],
+      "genres": [],
+      "moods": [
+        "reflective"
+      ],
+      "releaseOrder": 2,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 3,
       "id": "EFx4OAkRfms",
       "title": "Skyrim's Hardest Game",
       "details": "A Funny Song About Sofia and the Dragonborn 1080p Music Video",
-      "collection": "humour",
-      "review": false
+      "review": false,
+      "collections": [
+        "humour",
+        "stories"
+      ],
+      "genres": [],
+      "moods": [
+        "humorous"
+      ],
+      "releaseOrder": 3,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 4,
       "id": "RGQF-oL6EWQ",
       "title": "Old Stones Keep the Answers",
       "details": "Electronica Version Music Video",
-      "collection": "stories",
-      "review": false
+      "review": false,
+      "collections": [
+        "stories"
+      ],
+      "genres": [
+        "electronic"
+      ],
+      "moods": [],
+      "releaseOrder": 4,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 5,
       "id": "7-XFPiXiT2k",
       "title": "It's Only Work Again",
       "details": "A Witcher-Inspired Anti-Hero Song Music Video",
-      "collection": "stories",
-      "review": false
+      "review": false,
+      "collections": [
+        "stories"
+      ],
+      "genres": [],
+      "moods": [],
+      "releaseOrder": 5,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 6,
       "id": "DRYYXrXJwuw",
       "title": "Schau hoch! Pass auf!",
       "details": "Deutscher Comedy-Song über Smartphones Official Music Video",
-      "collection": "tscherman",
-      "review": false
+      "review": false,
+      "collections": [
+        "tscherman",
+        "humour"
+      ],
+      "genres": [],
+      "moods": [
+        "humorous"
+      ],
+      "releaseOrder": 6,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 7,
       "id": "JXEAXxwb4rg",
       "title": "A Little Room for Wonder",
       "details": "A Dreamy Song About Escaping the Ordinary Music Video",
-      "collection": "dreams",
-      "review": false
+      "review": false,
+      "collections": [
+        "dreams"
+      ],
+      "genres": [],
+      "moods": [
+        "dreamlike"
+      ],
+      "releaseOrder": 7,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 8,
       "id": "5dWvaTx8lyw",
       "title": "IKEA macht misch psychisch",
       "details": "Deutscher Comedy-Song über den Umzug, Music Video",
-      "collection": "tscherman",
-      "review": false
+      "review": false,
+      "collections": [
+        "tscherman",
+        "humour"
+      ],
+      "genres": [],
+      "moods": [
+        "humorous"
+      ],
+      "releaseOrder": 8,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 9,
       "id": "MErvO4VlN3Y",
       "title": "Between Stations",
       "details": "A Haunting Original Song of Memory and Loss Music Video",
-      "collection": "reflection",
-      "review": false
+      "review": false,
+      "collections": [
+        "reflection"
+      ],
+      "genres": [],
+      "moods": [
+        "dreamlike",
+        "reflective"
+      ],
+      "releaseOrder": 9,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 10,
       "id": "fQlXoZ0Jv-k",
       "title": "In the Music",
       "details": "An Original Song About Jamming with Friends Music Video",
-      "collection": "making-music",
-      "review": false
+      "review": false,
+      "collections": [
+        "making-music",
+        "stories"
+      ],
+      "genres": [],
+      "moods": [
+        "uplifting"
+      ],
+      "releaseOrder": 10,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 11,
       "id": "C20QYgPZ-3Y",
       "title": "Better than Anything",
       "details": "An Original Song About Making Music Together Music Video",
-      "collection": "making-music",
-      "review": false
+      "review": false,
+      "collections": [
+        "making-music",
+        "stories"
+      ],
+      "genres": [],
+      "moods": [
+        "heartfelt",
+        "uplifting"
+      ],
+      "releaseOrder": 11,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 12,
       "id": "IvOzyUneIiQ",
       "title": "Old Stones Keep the Answers",
       "details": "Prog-Rock Version Music Video",
-      "collection": "stories",
-      "review": false
+      "review": false,
+      "collections": [
+        "stories"
+      ],
+      "genres": [
+        "progressive-rock"
+      ],
+      "moods": [],
+      "releaseOrder": 12,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 13,
       "id": "dabe7Lxpar4",
       "title": "Slow Burn",
       "details": "Valerie Harding Song – Sledge Hammer Remix, Music Video",
-      "collection": "stories",
-      "review": false
+      "review": false,
+      "collections": [
+        "stories"
+      ],
+      "genres": [],
+      "moods": [],
+      "releaseOrder": 13,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 14,
       "id": "TiSS_uiOo-A",
       "title": "The Road Beyond the Mist",
       "details": "Uilleann Pipes Instrumental, Music Video",
-      "collection": "instrumentals",
-      "review": false
+      "review": false,
+      "collections": [
+        "instrumentals",
+        "dreams"
+      ],
+      "genres": [
+        "folk",
+        "ambient-instrumental"
+      ],
+      "moods": [
+        "atmospheric"
+      ],
+      "releaseOrder": 14,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 15,
       "id": "OkvMEpe0NZY",
       "title": "Singapore Ignites",
       "details": "Original Song Inspired by the Lion City",
-      "collection": "stories",
-      "review": false
+      "review": false,
+      "collections": [
+        "stories"
+      ],
+      "genres": [],
+      "moods": [],
+      "releaseOrder": 15,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 16,
       "id": "55MRzg9choQ",
       "title": "When Will the Pain Stop?",
       "details": "Original Emotional Song",
-      "collection": "reflection",
-      "review": false
+      "review": false,
+      "collections": [
+        "reflection"
+      ],
+      "genres": [],
+      "moods": [
+        "reflective"
+      ],
+      "releaseOrder": 16,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 17,
       "id": "h71hWnlMCTY",
       "title": "The Wee Stone Cottage in Wicklow",
       "details": "Original Irish Folk Ballad",
-      "collection": "stories",
-      "review": false
+      "review": false,
+      "collections": [
+        "stories"
+      ],
+      "genres": [
+        "folk"
+      ],
+      "moods": [],
+      "releaseOrder": 17,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 18,
       "id": "UQYA2t09gw4",
       "title": "I Knew It Was a Mistake to Get Out of Bed",
       "details": "Original Song",
-      "collection": "humour",
-      "review": false
+      "review": false,
+      "collections": [
+        "humour"
+      ],
+      "genres": [],
+      "moods": [
+        "atmospheric"
+      ],
+      "releaseOrder": 18,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 19,
       "id": "iH52CJJ4Vhc",
       "title": "Daydreaming",
       "details": "The Dream Is Washed Away",
-      "collection": "dreams",
-      "review": false
+      "review": false,
+      "collections": [
+        "dreams"
+      ],
+      "genres": [],
+      "moods": [
+        "dreamlike"
+      ],
+      "releaseOrder": 19,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 20,
       "id": "TYka4pk006U",
       "title": "Out of Focus",
       "details": "A Dream Fading Like Watercolors in the Rain",
-      "collection": "dreams",
-      "review": false
+      "review": false,
+      "collections": [
+        "dreams"
+      ],
+      "genres": [],
+      "moods": [
+        "dreamlike"
+      ],
+      "releaseOrder": 20,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 21,
       "id": "2FIsNjilY_k",
       "title": "Last Call on the Mississippi",
       "details": "Slow Blues Instrumental",
-      "collection": "instrumentals",
-      "review": false
+      "review": false,
+      "collections": [
+        "instrumentals"
+      ],
+      "genres": [
+        "blues",
+        "ambient-instrumental"
+      ],
+      "moods": [
+        "atmospheric"
+      ],
+      "releaseOrder": 21,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 22,
       "id": "4ruTLIK-HkQ",
       "title": "Alone",
       "details": "An Atmospheric Song of Solitude and Melancholy",
-      "collection": "reflection",
-      "review": false
+      "review": false,
+      "collections": [
+        "reflection"
+      ],
+      "genres": [
+        "ambient-instrumental"
+      ],
+      "moods": [
+        "reflective",
+        "atmospheric"
+      ],
+      "releaseOrder": 22,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 23,
       "id": "qOK2mOLO7iI",
       "title": "The Mountain Never Knew Its Name",
       "details": "An Original Anti-War Song",
-      "collection": "stories",
-      "review": false
+      "review": false,
+      "collections": [
+        "stories"
+      ],
+      "genres": [],
+      "moods": [
+        "dramatic"
+      ],
+      "releaseOrder": 23,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 24,
       "id": "_SHxdGaprIw",
       "title": "Weave It In",
       "details": "An Original Song About Making Music Together",
-      "collection": "making-music",
-      "review": false
+      "review": false,
+      "collections": [
+        "making-music",
+        "stories"
+      ],
+      "genres": [],
+      "moods": [
+        "heartfelt",
+        "uplifting"
+      ],
+      "releaseOrder": 24,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 25,
       "id": "5HQNz2gRaeA",
       "title": "I Want That Time Again",
       "details": "A Father's Song for His Daughter",
-      "collection": "stories",
-      "review": false
+      "review": false,
+      "collections": [
+        "stories"
+      ],
+      "genres": [],
+      "moods": [
+        "heartfelt"
+      ],
+      "releaseOrder": 25,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 26,
       "id": "uiHOHSg4Bv8",
       "title": "Open Hands",
       "details": "A Song About Love, Regret and Letting Go",
-      "collection": "reflection",
-      "review": false
+      "review": false,
+      "collections": [
+        "reflection",
+        "stories"
+      ],
+      "genres": [],
+      "moods": [
+        "reflective",
+        "heartfelt"
+      ],
+      "releaseOrder": 26,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 27,
       "id": "1i3MPw09iH4",
       "title": "Somebody Stole Me Beach",
       "details": "Aussie Comedy Song – Official Music Video",
-      "collection": "humour",
-      "review": false
+      "review": false,
+      "collections": [
+        "humour"
+      ],
+      "genres": [],
+      "moods": [
+        "humorous"
+      ],
+      "releaseOrder": 27,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 28,
       "id": "cYY1Hcv7JI8",
       "title": "Standing Is Overrated",
       "details": "A Song for Those Living with POTS",
-      "collection": "humour",
-      "review": false
+      "review": false,
+      "collections": [
+        "humour"
+      ],
+      "genres": [],
+      "moods": [],
+      "releaseOrder": 28,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 29,
       "id": "r_lcxK_eUEc",
       "title": "A Dream",
       "details": "A Haunting Song About a Memory That Fades",
-      "collection": "dreams",
-      "review": false
+      "review": false,
+      "collections": [
+        "dreams",
+        "reflection"
+      ],
+      "genres": [],
+      "moods": [
+        "dreamlike"
+      ],
+      "releaseOrder": 29,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 30,
       "id": "0dCXs6B1Ejg",
       "title": "Home Is Wherever You Are",
       "details": "The Long Way Home – Original Song",
-      "collection": "stories",
-      "review": false
+      "review": false,
+      "collections": [
+        "stories"
+      ],
+      "genres": [],
+      "moods": [],
+      "releaseOrder": 30,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 31,
       "id": "Ky8UHcC10LM",
       "title": "House on the Beach",
       "details": "A Dream of a Simpler Life",
-      "collection": "dreams",
-      "review": false
+      "review": false,
+      "collections": [
+        "dreams",
+        "reflection"
+      ],
+      "genres": [],
+      "moods": [
+        "dreamlike"
+      ],
+      "releaseOrder": 31,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 32,
       "id": "nm9Grb4ATrY",
       "title": "You Looked Happy",
       "details": "A Song About Letting Go of First Love",
-      "collection": "reflection",
-      "review": false
+      "review": false,
+      "collections": [
+        "reflection",
+        "stories"
+      ],
+      "genres": [],
+      "moods": [
+        "heartfelt"
+      ],
+      "releaseOrder": 32,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 33,
       "id": "Pd4ePQ1ZSm0",
       "title": "Last Night (in L.A.)",
       "details": "Original Dark Pop Music Video",
-      "collection": "stories",
-      "review": false
+      "review": false,
+      "collections": [
+        "stories"
+      ],
+      "genres": [
+        "pop"
+      ],
+      "moods": [],
+      "releaseOrder": 33,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 34,
       "id": "8ty8k_Trnw8",
       "title": "Liquid Sunshine",
       "details": "Original Song About Regret and Redemption",
-      "collection": "reflection",
-      "review": false
+      "review": false,
+      "collections": [
+        "reflection",
+        "stories"
+      ],
+      "genres": [],
+      "moods": [
+        "reflective"
+      ],
+      "releaseOrder": 34,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 35,
       "id": "1jXCVKYlLTw",
       "title": "The Life We Never Lived",
       "details": "Original Song & Dreamlike Music Video",
-      "collection": "dreams",
-      "review": false
+      "review": false,
+      "collections": [
+        "dreams",
+        "reflection"
+      ],
+      "genres": [],
+      "moods": [
+        "dreamlike"
+      ],
+      "releaseOrder": 35,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 36,
       "id": "4HyWyrVTUgo",
       "title": "Music Talks",
       "details": "When Nobody Plays Alone (Original Music Video)",
-      "collection": "making-music",
-      "review": false
+      "review": false,
+      "collections": [
+        "making-music",
+        "stories"
+      ],
+      "genres": [],
+      "moods": [],
+      "releaseOrder": 36,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 37,
       "id": "yMw_fX0ATZw",
       "title": "That's the Best",
       "details": "The Magic of Playing Music Together (Original Song)",
-      "collection": "making-music",
-      "review": false
+      "review": false,
+      "collections": [
+        "making-music",
+        "stories"
+      ],
+      "genres": [],
+      "moods": [
+        "heartfelt",
+        "uplifting"
+      ],
+      "releaseOrder": 37,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 38,
       "id": "TjsvQc17DwM",
       "title": "In That Special Way",
       "details": "Original Love Song (Official Music Video)",
-      "collection": "reflection",
-      "review": false
+      "review": false,
+      "collections": [
+        "reflection"
+      ],
+      "genres": [],
+      "moods": [
+        "heartfelt"
+      ],
+      "releaseOrder": 38,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 39,
       "id": "jtHMIBf0Zl0",
       "title": "My Blue Eyed Wonder",
       "details": "Original Father–Daughter Song & Painted Music Video",
-      "collection": "reflection",
-      "review": false
+      "review": false,
+      "collections": [
+        "reflection"
+      ],
+      "genres": [],
+      "moods": [
+        "reflective",
+        "heartfelt"
+      ],
+      "releaseOrder": 39,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 40,
       "id": "NjaFm4QjR6U",
       "title": "Saint Peter – Look Up! Look Out!",
       "details": "Satirical Original Song & Music Video",
-      "collection": "stories",
-      "review": false
+      "review": false,
+      "collections": [
+        "stories"
+      ],
+      "genres": [],
+      "moods": [
+        "humorous"
+      ],
+      "releaseOrder": 40,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 41,
       "id": "l6SWAsvfLDM",
       "title": "While I Tried to Live",
       "details": "Original Song About Burnout, Pain & Survival",
-      "collection": "reflection",
-      "review": false
+      "review": false,
+      "collections": [
+        "reflection",
+        "stories"
+      ],
+      "genres": [],
+      "moods": [
+        "reflective"
+      ],
+      "releaseOrder": 41,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 42,
       "id": "96Nrl0adpBs",
       "title": "Where the Oaks Let In the Sun",
       "details": "Original Reflective Song & Dreamlike Music Video",
-      "collection": "dreams",
-      "review": false
+      "review": false,
+      "collections": [
+        "dreams"
+      ],
+      "genres": [],
+      "moods": [
+        "dreamlike",
+        "reflective"
+      ],
+      "releaseOrder": 42,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 43,
       "id": "EfQAx2revfo",
       "title": "I Can't Save Everyone",
       "details": "Original Song About Helping, Boundaries & Letting Go, Music Video 1080p",
-      "collection": "reflection",
-      "review": false
+      "review": false,
+      "collections": [
+        "reflection",
+        "stories"
+      ],
+      "genres": [],
+      "moods": [],
+      "releaseOrder": 43,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 44,
       "id": "jxlrJp0mgUA",
       "title": "The First Five Days",
       "details": "Original Blues-Rock Song About Surviving the Week Music Video",
-      "collection": "humour",
-      "review": false
+      "review": false,
+      "collections": [
+        "humour"
+      ],
+      "genres": [
+        "blues",
+        "rock"
+      ],
+      "moods": [],
+      "releaseOrder": 44,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 45,
       "id": "6YfK02LAeNc",
       "title": "Pretty Girl from East London",
       "details": "An Original Song for a Brilliant Mum Music Video",
-      "collection": "stories",
-      "review": false
+      "review": false,
+      "collections": [
+        "stories"
+      ],
+      "genres": [],
+      "moods": [
+        "heartfelt"
+      ],
+      "releaseOrder": 45,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 46,
       "id": "ei0wd8LE2h4",
       "title": "The River Keeps the Blues",
       "details": "Mississippi Slow Blues Instrumental Music Video",
-      "collection": "instrumentals",
-      "review": false
+      "review": false,
+      "collections": [
+        "instrumentals"
+      ],
+      "genres": [
+        "blues",
+        "ambient-instrumental"
+      ],
+      "moods": [
+        "atmospheric"
+      ],
+      "releaseOrder": 46,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 47,
       "id": "3WUeBQd0tXQ",
       "title": "That Look",
       "details": "An Original Song About Being Truly Seen, Music Video",
-      "collection": "reflection",
-      "review": false
+      "review": false,
+      "collections": [
+        "reflection",
+        "stories"
+      ],
+      "genres": [],
+      "moods": [
+        "heartfelt"
+      ],
+      "releaseOrder": 47,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 48,
       "id": "bZQuSL5ebLQ",
       "title": "Before I Speak",
       "details": "An Original Song About Wordless Connection, Music Video",
-      "collection": "reflection",
-      "review": false
+      "review": false,
+      "collections": [
+        "reflection",
+        "stories"
+      ],
+      "genres": [],
+      "moods": [],
+      "releaseOrder": 48,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 49,
       "id": "_Zb5YekP3WY",
       "title": "A Man Can Dream",
       "details": "An Original Song About Longing to Be Seen, Music Video",
-      "collection": "dreams",
-      "review": false
+      "review": false,
+      "collections": [
+        "dreams",
+        "reflection"
+      ],
+      "genres": [],
+      "moods": [
+        "dreamlike",
+        "reflective",
+        "heartfelt"
+      ],
+      "releaseOrder": 49,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 50,
       "id": "pRO8XUsY5QQ",
       "title": "Someone to Just Be With",
       "details": "An Original Song About Longing for True Love, Music Video",
-      "collection": "reflection",
-      "review": false
+      "review": false,
+      "collections": [
+        "reflection",
+        "stories"
+      ],
+      "genres": [],
+      "moods": [
+        "reflective",
+        "heartfelt"
+      ],
+      "releaseOrder": 50,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 51,
       "id": "PG6ncFJI1GY",
       "title": "See Me Like You Do",
       "details": "“Before I Speak” – Alternative Arrangement, Music Video",
-      "collection": "reflection",
-      "review": false
+      "review": false,
+      "collections": [
+        "reflection",
+        "stories"
+      ],
+      "genres": [],
+      "moods": [],
+      "releaseOrder": 51,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 52,
       "id": "n-VlOUabxH4",
       "title": "Like Watercolours",
       "details": "A Dream Dissolving in the Rain – Original Song Music Video",
-      "collection": "dreams",
-      "review": false
+      "review": false,
+      "collections": [
+        "dreams"
+      ],
+      "genres": [],
+      "moods": [
+        "dreamlike"
+      ],
+      "releaseOrder": 52,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 53,
       "id": "NFIRJGhPlw8",
       "title": "The Shape I Know",
       "details": "An Original Baroque Pop Song About a Dream That Lingers, Music Video",
-      "collection": "dreams",
-      "review": false
+      "review": false,
+      "collections": [
+        "dreams"
+      ],
+      "genres": [
+        "pop"
+      ],
+      "moods": [
+        "dreamlike"
+      ],
+      "releaseOrder": 53,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 54,
       "id": "Lzjj2MBHBec",
       "title": "Water in Your Hand",
       "details": "An Original Song About a Dream You Can't Hold, Music Video",
-      "collection": "dreams",
-      "review": false
+      "review": false,
+      "collections": [
+        "dreams"
+      ],
+      "genres": [],
+      "moods": [
+        "dreamlike"
+      ],
+      "releaseOrder": 54,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 55,
       "id": "Er3UhheEnRc",
       "title": "Proud to Be Your Brother",
       "details": "A Funny, Affectionate Song for My Brother, Music Video",
-      "collection": "humour",
-      "review": false
+      "review": false,
+      "collections": [
+        "humour"
+      ],
+      "genres": [],
+      "moods": [
+        "humorous",
+        "heartfelt"
+      ],
+      "releaseOrder": 55,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 56,
       "id": "CZ-VRQMs2k4",
       "title": "I Only Came to Fish",
       "details": "A Red Dead Online–Inspired Comedy Song, Music Video",
-      "collection": "humour",
       "review": true,
       "hidden": true,
-      "visibility_note": "Excluded by public-only yt-dlp filter, exact visibility not established"
+      "visibility_note": "Excluded by public-only yt-dlp filter, exact visibility not established",
+      "collections": [
+        "humour",
+        "stories"
+      ],
+      "genres": [],
+      "moods": [
+        "humorous"
+      ],
+      "releaseOrder": 56,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 57,
       "id": "xBxfrLbZbnY",
       "title": "Coffee on the Terrace",
       "details": "Original Coastal Love Song & Watercolour Music Video, Music Video",
-      "collection": "reflection",
-      "review": false
+      "review": false,
+      "collections": [
+        "reflection"
+      ],
+      "genres": [],
+      "moods": [
+        "dreamlike",
+        "heartfelt"
+      ],
+      "releaseOrder": 57,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 58,
       "id": "NVNJuVk76Co",
       "title": "Summon You",
       "details": "British Shoegaze, Dream Pop & Post-Rock Instrumental, Music Video",
-      "collection": "instrumentals",
-      "review": false
+      "review": false,
+      "collections": [
+        "instrumentals",
+        "dreams"
+      ],
+      "genres": [
+        "post-rock",
+        "ambient-instrumental"
+      ],
+      "moods": [
+        "dreamlike",
+        "atmospheric"
+      ],
+      "releaseOrder": 58,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 59,
       "id": "e9tIGd893eI",
       "title": "You Looked Happy (Blues Version)",
       "details": "Original Song About Letting Go, Music Video",
-      "collection": "stories",
-      "review": false
+      "review": false,
+      "collections": [
+        "stories"
+      ],
+      "genres": [
+        "blues"
+      ],
+      "moods": [],
+      "releaseOrder": 59,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 60,
       "id": "FTlGDzlnxOk",
       "title": "Can't Get It Right",
       "details": "Original Song About Life Going Sideways, Music Video",
-      "collection": "stories",
-      "review": false
+      "review": false,
+      "collections": [
+        "stories"
+      ],
+      "genres": [],
+      "moods": [],
+      "releaseOrder": 60,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 61,
       "id": "Uzu6VFZT7Wg",
       "title": "Disappointment",
       "details": "Original Reflective Song About Life's Sunny Intervals, Music Video",
-      "collection": "reflection",
-      "review": false
+      "review": false,
+      "collections": [
+        "reflection",
+        "stories"
+      ],
+      "genres": [],
+      "moods": [
+        "reflective"
+      ],
+      "releaseOrder": 61,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 62,
       "id": "ichUAPirISE",
       "title": "Still Not Dirt Rich",
       "details": "HPH | Watercolour Lyric, Music Video",
-      "collection": "stories",
-      "review": false
+      "review": false,
+      "collections": [
+        "stories"
+      ],
+      "genres": [],
+      "moods": [
+        "dreamlike"
+      ],
+      "releaseOrder": 62,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 63,
       "id": "WqJ2cZsp59o",
       "title": "I Only Came to Fish",
       "details": "HPH | Western Comedy Lyric, Music Video",
-      "collection": "humour",
-      "review": false
+      "review": false,
+      "collections": [
+        "humour",
+        "stories"
+      ],
+      "genres": [],
+      "moods": [
+        "humorous"
+      ],
+      "releaseOrder": 63,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 64,
       "id": "C8yLVYcA3S4",
       "title": "The Perfect Stranger",
       "details": "HPH | Watercolour Lyric Video",
-      "collection": "stories",
-      "review": false
+      "review": false,
+      "collections": [
+        "stories"
+      ],
+      "genres": [],
+      "moods": [
+        "dreamlike"
+      ],
+      "releaseOrder": 64,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 65,
       "id": "ao4_GeFuGv0",
       "title": "Title unavailable",
       "details": "Title missing from playlist export",
-      "collection": "unidentified",
       "review": true,
-      "hidden": true
+      "hidden": true,
+      "collections": [
+        "unidentified"
+      ],
+      "genres": [],
+      "moods": [],
+      "releaseOrder": 65,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 66,
       "id": "g9RP90E1ZZo",
       "title": "Title unavailable",
       "details": "Title missing from playlist export",
-      "collection": "unidentified",
       "review": true,
-      "hidden": true
+      "hidden": true,
+      "collections": [
+        "unidentified"
+      ],
+      "genres": [],
+      "moods": [],
+      "releaseOrder": 66,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 67,
       "id": "WsvuhcsV0Ms",
       "title": "The Lumbago Tango",
       "details": "A Funny Song About Back Pain, Music Video",
-      "collection": "humour",
-      "review": false
+      "review": false,
+      "collections": [
+        "humour"
+      ],
+      "genres": [],
+      "moods": [
+        "humorous",
+        "reflective"
+      ],
+      "releaseOrder": 67,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 68,
       "id": "PUJSvfTcQL8",
       "title": "Green Lights for Nobody",
       "details": "Official Music Video",
-      "collection": "stories",
-      "review": false
+      "review": false,
+      "collections": [
+        "stories"
+      ],
+      "genres": [],
+      "moods": [],
+      "releaseOrder": 68,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 69,
       "id": "pUwWzLe2nTs",
       "title": "Dissolving into Ambience",
       "details": "Instrumental Music & Watercolour Landscapes, Music Video",
-      "collection": "instrumentals",
-      "review": false
+      "review": false,
+      "collections": [
+        "instrumentals",
+        "dreams"
+      ],
+      "genres": [
+        "ambient-instrumental"
+      ],
+      "moods": [
+        "dreamlike",
+        "atmospheric"
+      ],
+      "releaseOrder": 69,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 70,
       "id": "7rvgvXVpyz8",
       "title": "Halt die Klappe und gib mir den Eierpunsch!",
       "details": "Weihnachtssatire, Music Video",
-      "collection": "tscherman",
-      "review": false
+      "review": false,
+      "collections": [
+        "tscherman",
+        "humour"
+      ],
+      "genres": [],
+      "moods": [
+        "humorous"
+      ],
+      "releaseOrder": 70,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 71,
       "id": "1b31kM4TxOk",
       "title": "SHUDDUP AND GIMME THE EGGNOG!",
       "details": "Christmas Satire, Music Video",
-      "collection": "humour",
-      "review": false
+      "review": false,
+      "collections": [
+        "humour"
+      ],
+      "genres": [],
+      "moods": [
+        "humorous"
+      ],
+      "releaseOrder": 71,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 72,
       "id": "a172P3q_iBg",
       "title": "Where You Were",
       "details": "A Song About Starting Over, Music Video",
-      "collection": "reflection",
-      "review": false
+      "review": false,
+      "collections": [
+        "reflection",
+        "stories"
+      ],
+      "genres": [],
+      "moods": [],
+      "releaseOrder": 72,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 73,
       "id": "zQMJo44QMYI",
       "title": "She's Gold",
       "details": "An Original Song for a Brilliant Mum | Watercolour Music Video",
-      "collection": "stories",
-      "review": false
+      "review": false,
+      "collections": [
+        "stories"
+      ],
+      "genres": [],
+      "moods": [
+        "dreamlike",
+        "heartfelt"
+      ],
+      "releaseOrder": 73,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 74,
       "id": "BvJGTonsWdQ",
       "title": "Wings of an Eagle",
       "details": "An Original Song About Finding Peace | Watercolour Music Video",
-      "collection": "dreams",
-      "review": false
+      "review": false,
+      "collections": [
+        "dreams"
+      ],
+      "genres": [],
+      "moods": [
+        "dreamlike"
+      ],
+      "releaseOrder": 74,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 75,
       "id": "IsT613EVVZk",
       "title": "The Kitchen Disco Wobble YouTube 1080p",
       "details": "",
-      "collection": "humour",
-      "review": false
+      "review": false,
+      "collections": [
+        "humour"
+      ],
+      "genres": [],
+      "moods": [
+        "humorous"
+      ],
+      "releaseOrder": 75,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 76,
       "id": "TBa2YhTBf6g",
       "title": "Room That Forgot",
       "details": "An Original Song of Absence and Longing | Watercolour Music Video",
-      "collection": "reflection",
-      "review": false
+      "review": false,
+      "collections": [
+        "reflection"
+      ],
+      "genres": [],
+      "moods": [
+        "dreamlike",
+        "reflective"
+      ],
+      "releaseOrder": 76,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 77,
       "id": "E_VSdYi3V1E",
       "title": "The Silver Thread, Part One",
       "details": "Original Instrumental | Watercolour & Animation",
-      "collection": "instrumentals",
-      "review": false
+      "review": false,
+      "collections": [
+        "instrumentals",
+        "dreams"
+      ],
+      "genres": [
+        "ambient-instrumental"
+      ],
+      "moods": [
+        "dreamlike",
+        "atmospheric"
+      ],
+      "releaseOrder": 77,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 78,
       "id": "tYQhaWjEugc",
       "title": "The Silver Thread, Part Three",
       "details": "Original Instrumental | Watercolour & Animation",
-      "collection": "instrumentals",
-      "review": false
+      "review": false,
+      "collections": [
+        "instrumentals",
+        "dreams"
+      ],
+      "genres": [
+        "ambient-instrumental"
+      ],
+      "moods": [
+        "dreamlike",
+        "atmospheric"
+      ],
+      "releaseOrder": 78,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 79,
       "id": "osgV22VrZNc",
       "title": "The Silver Thread, Part Two",
       "details": "Original Instrumental | Watercolour & Animation",
-      "collection": "instrumentals",
-      "review": false
+      "review": false,
+      "collections": [
+        "instrumentals",
+        "dreams"
+      ],
+      "genres": [
+        "ambient-instrumental"
+      ],
+      "moods": [
+        "dreamlike",
+        "atmospheric"
+      ],
+      "releaseOrder": 79,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 80,
       "id": "KcLBezcRSCA",
       "title": "The Silver Thread, Part Four",
       "details": "Original Instrumental | Watercolour & Animation",
-      "collection": "instrumentals",
-      "review": false
+      "review": false,
+      "collections": [
+        "instrumentals",
+        "dreams"
+      ],
+      "genres": [
+        "ambient-instrumental"
+      ],
+      "moods": [
+        "dreamlike",
+        "atmospheric"
+      ],
+      "releaseOrder": 80,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 81,
       "id": "Ps-Wrsr7OY4",
       "title": "Title unavailable",
       "details": "Title missing from playlist export",
-      "collection": "unidentified",
       "review": true,
-      "hidden": true
+      "hidden": true,
+      "collections": [
+        "unidentified"
+      ],
+      "genres": [],
+      "moods": [],
+      "releaseOrder": 81,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 82,
       "id": "Cca3eNcBwAM",
       "title": "I Need a Holiday from My Holiday",
       "details": "Sledge Hammer | Watercolour Music Video",
-      "collection": "humour",
-      "review": false
+      "review": false,
+      "collections": [
+        "humour",
+        "stories"
+      ],
+      "genres": [
+        "deep-house"
+      ],
+      "moods": [
+        "dreamlike",
+        "humorous"
+      ],
+      "releaseOrder": 82,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 83,
       "id": "BoxzzFk8tP0",
       "title": "Title unavailable",
       "details": "Title missing from playlist export",
-      "collection": "unidentified",
       "review": true,
-      "hidden": true
+      "hidden": true,
+      "collections": [
+        "unidentified"
+      ],
+      "genres": [],
+      "moods": [],
+      "releaseOrder": 83,
+      "releaseDate": null,
+      "classification": "provisional"
     },
     {
       "order": 84,
       "id": "c8mQF2ho1PY",
       "title": "Ink and Pain – Sledge Hammer (Original Song",
       "details": "Cinematic Rock Ballad), Music Video",
-      "collection": "reflection",
-      "review": false
+      "review": false,
+      "collections": [
+        "reflection"
+      ],
+      "genres": [
+        "rock"
+      ],
+      "moods": [
+        "reflective",
+        "dramatic"
+      ],
+      "releaseOrder": 84,
+      "releaseDate": null,
+      "classification": "provisional"
     }
-  ]
+  ],
+  "schema_version": 2
 }
