@@ -9,21 +9,21 @@
       "title": "Where Silence Ends",
       "details": "An atmospheric romantic duet inspired by Battlemage Sledge and Elara Silverleaf — forty years of friendship, loyalty and unspoken love. Original version.",
       "review": false,
-      "hidden": true,
+      "hidden": false,
       "collections": [
         "reflection",
         "stories"
       ],
       "genres": [
-        "ambient-instrumental"
+        "alternative-rock"
       ],
       "moods": [
         "reflective",
         "heartfelt",
         "atmospheric"
       ],
-      "releaseOrder": -2,
-      "releaseDate": null,
+      "releaseOrder": -10,
+      "releaseDate": "2026-11-14",
       "classification": "confirmed-title",
       "version": "original",
       "relatedVideoId": "EFe97drPZP0"
@@ -39,17 +39,130 @@
         "reflection",
         "stories"
       ],
-      "genres": [],
+      "genres": [
+        "alternative-rock"
+      ],
       "moods": [
         "reflective",
         "heartfelt",
         "atmospheric"
       ],
-      "releaseOrder": -1,
-      "releaseDate": null,
+      "releaseOrder": -9,
+      "releaseDate": "2026-11-15",
       "classification": "confirmed-title",
       "version": "alternative",
       "relatedVideoId": "N8M20XlSmX0"
+    },
+    {
+      "order": -2,
+      "id": "95L9AEx7-B8",
+      "title": "Proud of Her",
+      "details": "A father's heartfelt tribute to his 18-year-old daughter, juggling school, her kindergarten internship, exhausting days and written reports. Her determination is seen and appreciated.",
+      "collections": [
+        "seen-heard",
+        "snapshots",
+        "reflection"
+      ],
+      "genres": [],
+      "moods": [
+        "heartfelt",
+        "reflective"
+      ],
+      "releaseDate": "2026-11-15",
+      "releaseOrder": -8,
+      "review": false,
+      "hidden": true,
+      "classification": "confirmed-title"
+    },
+    {
+      "order": -3,
+      "id": "PUt1fLGneWk",
+      "title": "Wake Inside the Rupture",
+      "details": "Spacious atmospheric progressive rock with sparse vocals, expansive soundscapes and soaring, expressive electric guitar.",
+      "collections": [
+        "dreams",
+        "reflection"
+      ],
+      "genres": [
+        "rock"
+      ],
+      "moods": [
+        "atmospheric",
+        "reflective"
+      ],
+      "releaseDate": "2026-11-16",
+      "releaseOrder": -7,
+      "review": false,
+      "hidden": true,
+      "classification": "confirmed-title"
+    },
+    {
+      "order": -4,
+      "id": "oHrUgfA0fp0",
+      "title": "You Love Me Anyway",
+      "details": "Four quiet lines about being completely known and loved unconditionally, carried by atmospheric guitars and reflective melodic passages.",
+      "collections": [
+        "reflection",
+        "dreams"
+      ],
+      "genres": [
+        "rock"
+      ],
+      "moods": [
+        "heartfelt",
+        "reflective",
+        "atmospheric"
+      ],
+      "releaseDate": "2026-11-16",
+      "releaseOrder": -6,
+      "review": false,
+      "hidden": true,
+      "classification": "confirmed-title"
+    },
+    {
+      "order": -5,
+      "id": "0-9Yz8m9fHs",
+      "title": "Let the Silence Breathe",
+      "details": "A spacious, contemplative guitar-led song with sparse vocals, evoking peaceful moments and wishing time could stand still.",
+      "collections": [
+        "dreams",
+        "reflection"
+      ],
+      "genres": [
+        "rock"
+      ],
+      "moods": [
+        "reflective",
+        "atmospheric"
+      ],
+      "releaseDate": "2026-11-17",
+      "releaseOrder": -5,
+      "review": false,
+      "hidden": true,
+      "classification": "confirmed-title"
+    },
+    {
+      "order": -6,
+      "id": "D1ZKxttz83w",
+      "title": "The Long Way Home",
+      "details": "Instrumental progressive rock journey through delicate piano, expressive lead guitars, soaring solos and quieter interludes, moving toward the feeling of home.",
+      "collections": [
+        "dreams",
+        "reflection"
+      ],
+      "genres": [
+        "ambient-instrumental",
+        "rock"
+      ],
+      "moods": [
+        "reflective",
+        "atmospheric"
+      ],
+      "releaseDate": "2026-11-17",
+      "releaseOrder": -4,
+      "review": false,
+      "hidden": true,
+      "classification": "confirmed-title"
     },
     {
       "order": 1,
