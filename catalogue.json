@@ -34,7 +34,7 @@
       "title": "Forty Years of Almost There",
       "details": "An unexpectedly beautiful, vocal-led alternative interpretation of Where Silence Ends, from the story of Battlemage Sledge and Elara Silverleaf.",
       "review": false,
-      "hidden": true,
+      "hidden": false,
       "collections": [
         "reflection",
         "stories"
@@ -71,7 +71,7 @@
       "releaseDate": "2026-11-15",
       "releaseOrder": -8,
       "review": false,
-      "hidden": true,
+      "hidden": false,
       "classification": "confirmed-title"
     },
     {
