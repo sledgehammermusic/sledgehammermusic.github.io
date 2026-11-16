@@ -138,7 +138,7 @@
       "releaseDate": "2026-11-17",
       "releaseOrder": -5,
       "review": false,
-      "hidden": true,
+      "hidden": false,
       "classification": "confirmed-title"
     },
     {
@@ -161,7 +161,7 @@
       "releaseDate": "2026-11-17",
       "releaseOrder": -4,
       "review": false,
-      "hidden": true,
+      "hidden": false,
       "classification": "confirmed-title"
     },
     {
