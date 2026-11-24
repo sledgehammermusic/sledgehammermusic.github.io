@@ -4,6 +4,30 @@
   "notes": "79 videos matched the public-only playlist export. Positions 65,66,81,83 are deleted by uploader; position 56 was excluded by availability=public. These five are preserved as hidden records for possible future review. Three confirmed German-language songs are grouped as Tscherman Songs; further songs can be assigned as identified. Genre and mood labels are preliminary, derived from published titles/descriptions; unconfirmed audio genre is deliberately left blank. releaseOrder is playlist order (lower is presumed newer), not independently verified upload dates; when new videos are added give them a lower releaseOrder than existing entries.",
   "tracks": [
     {
+      "order": -11,
+      "id": "4Gk2MtdqnlM",
+      "title": "Life (Fading Out of View)",
+      "details": "A deeply personal musical story about loneliness, leaving a home behind, crossing an ocean, surviving a medical crisis and learning to live again. A watercolour journey from exhaustion and fading memories towards resilience and hope.",
+      "collections": [
+        "snapshots",
+        "burnout",
+        "reflection"
+      ],
+      "genres": [
+        "rock"
+      ],
+      "moods": [
+        "reflective",
+        "heartfelt",
+        "dramatic"
+      ],
+      "releaseDate": "2026-11-24",
+      "releaseOrder": -15,
+      "review": false,
+      "hidden": false,
+      "classification": "confirmed-title"
+    },
+    {
       "order": -10,
       "id": "ynlTI2U7bug",
       "title": "Ghost Maid",
