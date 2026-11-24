@@ -4,6 +4,30 @@
   "notes": "79 videos matched the public-only playlist export. Positions 65,66,81,83 are deleted by uploader; position 56 was excluded by availability=public. These five are preserved as hidden records for possible future review. Three confirmed German-language songs are grouped as Tscherman Songs; further songs can be assigned as identified. Genre and mood labels are preliminary, derived from published titles/descriptions; unconfirmed audio genre is deliberately left blank. releaseOrder is playlist order (lower is presumed newer), not independently verified upload dates; when new videos are added give them a lower releaseOrder than existing entries.",
   "tracks": [
     {
+      "order": -12,
+      "id": "uVhfcRsaeTE",
+      "title": "Screaming in a Silent Room",
+      "details": "A personal guitar-driven rock song about the loneliness that can linger beneath an active, joyful life. Surrounded by work, music, laughter and friends, yet longing to be truly seen, heard, loved and cherished. Expressed through a watercolour music video.",
+      "collections": [
+        "snapshots",
+        "reflection",
+        "seen-heard"
+      ],
+      "genres": [
+        "rock"
+      ],
+      "moods": [
+        "reflective",
+        "heartfelt",
+        "dramatic"
+      ],
+      "releaseDate": "2026-11-24",
+      "releaseOrder": -16,
+      "review": false,
+      "hidden": false,
+      "classification": "confirmed-title"
+    },
+    {
       "order": -11,
       "id": "4Gk2MtdqnlM",
       "title": "Life (Fading Out of View)",
