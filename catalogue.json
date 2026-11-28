@@ -4,6 +4,29 @@
   "notes": "79 videos matched the public-only playlist export. Positions 65,66,81,83 are deleted by uploader; position 56 was excluded by availability=public. These five are preserved as hidden records for possible future review. Three confirmed German-language songs are grouped as Tscherman Songs; further songs can be assigned as identified. Genre and mood labels are preliminary, derived from published titles/descriptions; unconfirmed audio genre is deliberately left blank. releaseOrder is playlist order (lower is presumed newer), not independently verified upload dates; when new videos are added give them a lower releaseOrder than existing entries.",
   "tracks": [
     {
+      "order": -14,
+      "id": "WO4jXsNGEeA",
+      "title": "OCD (Obsessive Coffee Disorder)",
+      "details": "A funky, caffeine-fuelled Saturday anthem about morning survival, screaming espresso machines, vanishing patience and the sacred second mug. A cheeky watercolour music video for coffee lovers.",
+      "collections": [
+        "humour",
+        "stories"
+      ],
+      "genres": [
+        "deep-house",
+        "pop"
+      ],
+      "moods": [
+        "humorous",
+        "uplifting"
+      ],
+      "releaseDate": "2026-11-28",
+      "releaseOrder": -18,
+      "review": false,
+      "hidden": false,
+      "classification": "confirmed-title"
+    },
+    {
       "order": -13,
       "id": "bq0WwUuuoT4",
       "title": "Wide Awake in the Afterglow",
